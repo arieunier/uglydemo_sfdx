@@ -9,16 +9,18 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Ugly Demo Application</label>
     <navType>Standard</navType>
-    <tabs>standard-Product2</tabs>
-    <tabs>GameActivity__c</tabs>
-    <tabs>Match__c</tabs>
-    <tabs>Participant__c</tabs>
-    <tabs>Bet__c</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-report</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>GameActivity__c</tabs>
+    <tabs>Participant__c</tabs>
+    <tabs>Match__c</tabs>
+    <tabs>Bet__c</tabs>
     <tabs>heroku_logs__c</tabs>
     <tabs>ImageAnalysis__c</tabs>
     <tabs>webusers__c</tabs>
+    <tabs>Heroku_Demo_App</tabs>
+    <tabs>FormContent__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Bet_Application_UtilityBar</utilityBar>
 </CustomApplication>

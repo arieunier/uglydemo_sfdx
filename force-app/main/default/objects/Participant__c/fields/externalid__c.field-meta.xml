@@ -4,7 +4,7 @@
     <caseSensitive>false</caseSensitive>
     <externalId>true</externalId>
     <label>externalid</label>
-    <length>20</length>
+    <length>19</length>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

@@ -80,11 +80,7 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentInstanceProperties>
-                <name>url</name>
-                <value>https://yourdemo.herokuapp.com</value>
-            </componentInstanceProperties>
-            <componentName>MyCustomContent</componentName>
+            <componentName>HerokuIframe</componentName>
         </componentInstances>
         <mode>Replace</mode>
         <name>sidebar</name>

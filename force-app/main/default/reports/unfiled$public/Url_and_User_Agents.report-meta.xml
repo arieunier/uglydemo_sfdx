@@ -6,11 +6,6 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>heroku_logs__c.shorturl__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
         <field>heroku_logs__c.useragent__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
@@ -20,7 +15,7 @@
         <value>1</value>
     </params>
     <reportType>CustomEntity$heroku_logs__c</reportType>
-    <scope>user</scope>
+    <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>

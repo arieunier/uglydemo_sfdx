@@ -10,7 +10,7 @@
         <processMetadataValues>
             <name>textJson</name>
             <value>
-                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Hello,\nPlease validate that you have a meeting with {![Guest__c].Firstname__c} {![Guest__c].Lastname__c} from {![Guest__c].Company__c} and pick him up at the desk.\nhttps://arieunier-dev-ed.lightning.force.com/{![Guest__c].Id}&quot;}</stringValue>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Hello,\nPlease validate that you have a meeting with {![Guest__c].Firstname__c} {![Guest__c].Lastname__c} from {![Guest__c].Company__c} and pick him up at the desk.\nhttps://arieunier-cdo.lightning.force.com/{![Guest__c].Id}&quot;}</stringValue>
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
@@ -24,7 +24,7 @@
             <value>
                 <stringValue>Hello,
 Please validate that you have a meeting with {!myVariable_current.Firstname__c} {!myVariable_current.Lastname__c} from {!myVariable_current.Company__c} and pick him up at the desk.
-https://arieunier-dev-ed.lightning.force.com/{!myVariable_current.Id}</stringValue>
+https://arieunier-cdo.lightning.force.com/{!myVariable_current.Id}</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -89,7 +89,7 @@ https://arieunier-dev-ed.lightning.force.com/{!myVariable_current.Id}</stringVal
         <dataType>Boolean</dataType>
         <expression>true</expression>
     </formulas>
-    <interviewLabel>Guest_Notify_Host_upon_Registration-1_InterviewLabel</interviewLabel>
+    <interviewLabel>Guest_Notify_Host_upon_Registration-2_InterviewLabel</interviewLabel>
     <label>Guest - Notify Host upon Registration</label>
     <processMetadataValues>
         <name>ObjectType</name>

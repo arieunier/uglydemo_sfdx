@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Guest_Record_Page4</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Guest__c</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
         <logo>sftower2</logo>
@@ -13,11 +22,15 @@
     <label>Guest Ambassador Application</label>
     <navType>Console</navType>
     <tabs>Guest__c</tabs>
+    <tabs>Badge__c</tabs>
     <tabs>standard-Feed</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Guest_Ambassador_Application_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Badge__c</tab>
+        </mappings>
         <mappings>
             <tab>Guest__c</tab>
         </mappings>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>All</fullName>
+    <columns>ExternalId</columns>
+    <columns>guest_id__c</columns>
+    <columns>badge_status__c</columns>
+    <columns>guest_firstname__c</columns>
+    <columns>guest_lastname__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

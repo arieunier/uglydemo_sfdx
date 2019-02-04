@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>guest_id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>guest_id</description>
+    <externalDeveloperName>guest_id</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>guest_id</label>
+    <referenceTo>Guest__c</referenceTo>
+    <relationshipName>public_odata_badge</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

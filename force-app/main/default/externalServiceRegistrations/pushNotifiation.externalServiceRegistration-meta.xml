@@ -69,6 +69,74 @@
                     }
                 }
             }
+        },
+        &quot;/badges&quot;: 
+        {
+            &quot;post&quot;: 
+            {
+                &quot;summary&quot;: &quot;Creates a new badge for a user&quot;,
+                &quot;description&quot;: &quot;&quot;,
+                &quot;operationId&quot;: &quot;creates Badge&quot;,
+                &quot;parameters&quot;: [
+                    {
+                        &quot;name&quot;: &quot;guest_id&quot;,
+                        &quot;in&quot;: &quot;query&quot;,
+                        &quot;description&quot;: &quot;the guest_id&quot;,
+                        &quot;required&quot;: true,
+                        &quot;type&quot;: &quot;string&quot;
+                    },
+                    {
+                        &quot;name&quot;: &quot;guest_firstname&quot;,
+                        &quot;in&quot;: &quot;query&quot;,
+                        &quot;description&quot;: &quot;guest_firstname&quot;,
+                        &quot;required&quot;: true,
+                        &quot;type&quot;: &quot;string&quot;
+                    },
+                    {
+                        &quot;name&quot;: &quot;guest_lastname&quot;,
+                        &quot;in&quot;: &quot;query&quot;,
+                        &quot;description&quot;: &quot;guest_lastname&quot;,
+                        &quot;required&quot;: true,
+                        &quot;type&quot;: &quot;string&quot;
+                    },
+                    {
+                        &quot;name&quot;: &quot;guest_company&quot;,
+                        &quot;in&quot;: &quot;query&quot;,
+                        &quot;description&quot;: &quot;tguest_company&quot;,
+                        &quot;required&quot;: true,
+                        &quot;type&quot;: &quot;string&quot;
+                    },
+                    {
+                        &quot;name&quot;: &quot;host_firstname&quot;,
+                        &quot;in&quot;: &quot;query&quot;,
+                        &quot;description&quot;: &quot;host_firstname&quot;,
+                        &quot;required&quot;: true,
+                        &quot;type&quot;: &quot;string&quot;
+                    },
+                    {
+                        &quot;name&quot;: &quot;host_lastname&quot;,
+                        &quot;in&quot;: &quot;query&quot;,
+                        &quot;description&quot;: &quot;host_lastname&quot;,
+                        &quot;required&quot;: true,
+                        &quot;type&quot;: &quot;string&quot;
+                    }
+                ],
+                &quot;responses&quot;: 
+                {
+                    &quot;200&quot;: 
+                    {
+                        &quot;description&quot;: &quot;success&quot;,
+                        &quot;schema&quot;: 
+                        {
+                            &quot;$ref&quot;: &quot;#/definitions/simpleResponse&quot;
+                        }
+                    },
+                    &quot;404&quot;: 
+                    {
+                        &quot;description&quot;: &quot;Invalid input&quot;
+                    }
+                }
+            }
         }
     },
     &quot;definitions&quot;: {

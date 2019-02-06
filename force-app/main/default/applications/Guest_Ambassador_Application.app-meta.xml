@@ -22,17 +22,17 @@
     <label>Guest Ambassador Application</label>
     <navType>Console</navType>
     <tabs>Guest__c</tabs>
-    <tabs>Badge__c</tabs>
+    <tabs>public_badge__x</tabs>
     <tabs>standard-Feed</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Guest_Ambassador_Application_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
-            <tab>Badge__c</tab>
+            <tab>Guest__c</tab>
         </mappings>
         <mappings>
-            <tab>Guest__c</tab>
+            <tab>public_badge__x</tab>
         </mappings>
         <mappings>
             <tab>standard-Dashboard</tab>

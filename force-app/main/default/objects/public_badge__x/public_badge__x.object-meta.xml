@@ -36,12 +36,11 @@
     <deploymentStatus>InDevelopment</deploymentStatus>
     <description>public$badge</description>
     <enableFeeds>false</enableFeeds>
-    <enableReports>true</enableReports>
+    <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
-    <externalDataSource>badges_odata</externalDataSource>
+    <externalDataSource>odata_badges</externalDataSource>
     <externalName>public$badge</externalName>
-    <gender>Masculine</gender>
-    <label>Badges Entries</label>
-    <pluralLabel>Badges Entries</pluralLabel>
+    <label>public$badge</label>
+    <pluralLabel>public$badge</pluralLabel>
     <searchLayouts/>
 </CustomObject>

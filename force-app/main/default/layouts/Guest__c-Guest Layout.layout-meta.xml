@@ -238,7 +238,10 @@
         <fields>badge_status__c</fields>
         <fields>guest_firstname__c</fields>
         <fields>guest_lastname__c</fields>
+        <fields>creation_date__c</fields>
         <relatedList>public_badge__x.guest_id__c</relatedList>
+        <sortField>creation_date__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -246,7 +249,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0E000000pMui</masterLabel>
+        <masterLabel>00h0E00000184lc</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

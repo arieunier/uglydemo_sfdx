@@ -81,21 +81,6 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>flowName</name>
-                <value>call_to_Push_Notification</value>
-            </componentInstanceProperties>
-            <componentName>flowruntime:interview</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>flowArguments</name>
-                <value>[{&quot;label&quot;:&quot;recordId&quot;,&quot;dataType&quot;:&quot;String&quot;,&quot;supportsRecordId&quot;:true,&quot;value&quot;:&quot;{!Record.Id}&quot;}]</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>flowLayout</name>
-                <value>oneColumn</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>flowName</name>
                 <value>Push_Notification_through_Platform_Events</value>
             </componentInstanceProperties>
             <componentName>flowruntime:interview</componentName>

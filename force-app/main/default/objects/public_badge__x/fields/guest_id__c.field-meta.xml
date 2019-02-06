@@ -10,7 +10,8 @@
     <isSortingDisabled>false</isSortingDisabled>
     <label>guest_id</label>
     <referenceTo>Guest__c</referenceTo>
-    <relationshipName>public_odata_badge</relationshipName>
+    <relationshipLabel>public$badge</relationshipLabel>
+    <relationshipName>public_badge</relationshipName>
     <required>false</required>
     <type>Lookup</type>
 </CustomField>

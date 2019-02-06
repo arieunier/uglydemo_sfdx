@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global" >
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="parameters" type="String" />
+    <force:canvasApp developerName="Badge_System_Applications" parameters="{!v.parameters}" />   
+</aura:component>

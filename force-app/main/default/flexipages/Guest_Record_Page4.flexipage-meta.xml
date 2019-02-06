@@ -27,6 +27,9 @@
         <componentInstances>
             <componentName>force:detailPanel</componentName>
         </componentInstances>
+        <componentInstances>
+            <componentName>forceChatter:recordFeedContainer</componentName>
+        </componentInstances>
         <mode>Replace</mode>
         <name>main</name>
         <type>Region</type>
@@ -81,9 +84,6 @@
                 <value>NONE</value>
             </componentInstanceProperties>
             <componentName>force:relatedListContainer</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentName>forceChatter:recordFeedContainer</componentName>
         </componentInstances>
         <componentInstances>
             <componentInstanceProperties>

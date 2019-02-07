@@ -2,19 +2,13 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <processMetadataValues>
-            <name>postTargetUserType</name>
-            <value>
-                <stringValue>REFERENCE</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
             <name>textJson</name>
             <value>
-                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Hello,\nPlease validate that you have a meeting with {![Guest__c].Firstname__c} {![Guest__c].Lastname__c} from {![Guest__c].Company__c} and pick him up at the desk.\nhttps://arieunier-cdo.lightning.force.com/{![Guest__c].Id}&quot;}</stringValue>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;Hello @[{![Guest__c].Host__c.Id}] ,\nPlease validate that you have a meeting with {![Guest__c].Firstname__c} {![Guest__c].Lastname__c} from {![Guest__c].Company__c} and pick him up at the desk.&quot;}</stringValue>
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Chatter to Host</label>
+        <label>Chatter to Record</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <actionName>chatterPost</actionName>
@@ -22,21 +16,17 @@
         <inputParameters>
             <name>text</name>
             <value>
-                <stringValue>Hello,
-Please validate that you have a meeting with {!myVariable_current.Firstname__c} {!myVariable_current.Lastname__c} from {!myVariable_current.Company__c} and pick him up at the desk.
-https://arieunier-cdo.lightning.force.com/{!myVariable_current.Id}</stringValue>
+                <stringValue>Hello @[{!myVariable_current.Host__r.Id}] ,
+Please validate that you have a meeting with {!myVariable_current.Firstname__c} {!myVariable_current.Lastname__c} from {!myVariable_current.Company__c} and pick him up at the desk.</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
             <name>type</name>
-            <value>
-                <stringValue>USER</stringValue>
-            </value>
         </inputParameters>
         <inputParameters>
             <name>subjectNameOrId</name>
             <value>
-                <elementReference>myVariable_current.Host__r.Id</elementReference>
+                <elementReference>myVariable_current.Id</elementReference>
             </value>
         </inputParameters>
     </actionCalls>

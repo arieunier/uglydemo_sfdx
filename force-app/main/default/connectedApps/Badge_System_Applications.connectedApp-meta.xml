@@ -18,8 +18,11 @@
     <label>Badge System Applications</label>
     <oauthConfig>
         <callbackUrl>http://localhost:5000/sfconnectedapp</callbackUrl>
+        <!-- 
         <consumerKey>3MVG9sSN_PMn8tjRzkCF3N9qXWKK2sKD4SpcIpUPZTmLGQWPtz.E2_QlFsWxJxmlhcZ2ZFlFy.MO6WP004_0Q</consumerKey>
         <consumerSecret>2099350258822430556</consumerSecret>
+        -->
+        
         <scopes>Basic</scopes>
         <scopes>RefreshToken</scopes>
     </oauthConfig>

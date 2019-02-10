@@ -21,6 +21,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>GameActivity__c.externalid__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ImageAnalysis__c.Age__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -226,6 +231,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Participant__c.externalid__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Participant__c.image__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -312,6 +322,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>heroku_logs__c.userid__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>heroku_logs__c.webuser__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

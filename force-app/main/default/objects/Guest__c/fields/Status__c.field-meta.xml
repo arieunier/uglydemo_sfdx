@@ -32,6 +32,11 @@
                 <default>false</default>
                 <label>BADGE RETURNED</label>
             </value>
+            <value>
+                <fullName>SECURITY RISK</fullName>
+                <default>false</default>
+                <label>SECURITY RISK</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

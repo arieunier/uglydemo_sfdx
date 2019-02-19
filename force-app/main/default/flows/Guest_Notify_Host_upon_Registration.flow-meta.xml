@@ -13,6 +13,9 @@
         <locationY>200</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>myRule_1_A2</targetReference>
+        </connector>
         <inputParameters>
             <name>text</name>
             <value>
@@ -27,6 +30,62 @@ Please validate that you have a meeting with {!myVariable_current.Firstname__c} 
             <name>subjectNameOrId</name>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>Creates a contact record from a Guest object</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A2</name>
+        <label>Creates Contact Object</label>
+        <locationX>100</locationX>
+        <locationY>300</locationY>
+        <actionName>CreateContactRecord</actionName>
+        <actionType>apex</actionType>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>guests</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>Guest__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>guests</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
             </value>
         </inputParameters>
     </actionCalls>
@@ -74,12 +133,13 @@ Please validate that you have a meeting with {!myVariable_current.Firstname__c} 
             <label>Always Reach out to Host</label>
         </rules>
     </decisions>
+    <description>New version including the updated apex code</description>
     <formulas>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
         <expression>true</expression>
     </formulas>
-    <interviewLabel>Guest_Notify_Host_upon_Registration-2_InterviewLabel</interviewLabel>
+    <interviewLabel>Guest_Notify_Host_upon_Registration-3_InterviewLabel</interviewLabel>
     <label>Guest - Notify Host upon Registration</label>
     <processMetadataValues>
         <name>ObjectType</name>

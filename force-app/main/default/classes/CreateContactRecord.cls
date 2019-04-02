@@ -24,7 +24,7 @@ public class CreateContactRecord {
 	        List<Account> checkAccounts = [SELECT id , name from Account where name=:resultApex.Company__c];
             System.debug(checkAccounts.size());    
             Account acc;
-            if (checkAccounts.size() > 0)                 // takes one random ...
+            if (checkAccounts.size() > 0)                 // takes one random ... 
             {
                 System.debug('Reusing existing account');
                 acc = checkAccounts[0];
@@ -42,11 +42,20 @@ public class CreateContactRecord {
 			Contact contact ;
             
             System.debug(checkContacts.size());    
-            if (checkContacts.size() > 0)                 // takes one random ...
+            if (checkContacts.size() > 0)                 // takes one random ... or at least the first one because of email unicity
             {
 
                 System.debug('Reusing existing contact');
                 contact = checkContacts[0];
+                // updates the contact data
+                acc.Name = resultApex.firstname__c+' '+resultApex.lastname__c;
+                // updates the contact data to match its name and email
+                contact.FirstName = resultApex.firstname__c;
+				contact.Lastname = resultApex.lastname__c;
+                contact.Email = resultApex.Email__c;
+                contact.MobilePhone = resultApex.Phone_Number__c;
+                contact.AccountId = acc.id;
+                update contact;
             }
 			else // creates the contact
             {
@@ -69,6 +78,7 @@ public class CreateContactRecord {
                   .get('Complete Data').getRecordTypeId(); 
                  
             update resultApex;
+            
            	
         } 
         

@@ -19,8 +19,9 @@ read -p "------------- Finished, type enter to continue "
 
 echo "------------- Launching web browser !" 
 sfdx force:org:open 
-read -p "------------- You can work on the org if you want to .. Beware all changes will be overwritten by the next push" 
+read -p "------------- Please ACTIVATE SURVEY in Salesforce BEFORE GOING TO THE NEXT STEP" 
 
+sfdx force:user:permset:assign -n "SurveyCreator" -u $SCRATCHORGALIAS
 
 echo "Pushing all source code to the org $SCRATCHORGALIAS" 
 sfdx force:source:push --forceoverwrite -u $SCRATCHORGALIAS

@@ -1,7 +1,0 @@
-"NAME","INCIDENT_DATE__C","SEVERITY__C","INFRACTION__C","INCIDENT_TYPE__C","REPORT__C","MINE__C"
-"A-0005","2018-06-06T17:00:00.000Z","Critical","false","Property damage","<p>Oil leak</p>","4567"
-"A-0001","2018-07-02T00:00:00.000Z","Medium","true","Human casualty","<p>Worker fell from a ladder and broke leg.  Was not supposed to work in this part of the mine.</p>","1234"
-"A-0002","2017-12-11T09:30:00.000Z","Critical","true","Property damage","<p>chemical product pollution.</p><p><br></p>","9012"
-"A-0006","2018-05-15T12:00:00.000Z","Critical","false","Human casualty","<p>wild salmon attack !!!</p><p><br></p>","4567"
-"A-0003","2018-07-13T00:30:00.000Z","High","false","Property damage","<p>Mine collapsed due to &#39;coup de grizou&#39;</p><p>Hopefully No one inside.</p>","1234"
-"A-0004","2018-06-02T10:00:00.000Z","Low","false","Human casualty","<p>Broke finger while digging</p>","1234"

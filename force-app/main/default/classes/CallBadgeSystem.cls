@@ -6,13 +6,13 @@ public class CallBadgeSystem {
         for  (Guest__c guest : guests)
         {
             //Soql request
-            Guest__c resultApex = [select id, name, firstname__c, lastname__c, company__c, host__r.firstname, host__r.lastname from guest__c where Id = :guest.id];
+            Guest__c resultApex = [select id, name, firstname__c, lastname__c, External_Picture_URL__c , company__c, host__r.firstname, host__r.lastname from guest__c where Id = :guest.id];
             FutureCallBadgeSystem.apexcallout(resultApex.id,
                                               resultApex.firstname__c,
                                               resultApex.lastname__c,
                                               resultApex.company__c, 
                                               resultApex.host__r.firstname, 
-                                              resultApex.host__r.lastname);
+                                              resultApex.host__r.lastname, resultApex.External_Picture_URL__c );
         } 
         
     }

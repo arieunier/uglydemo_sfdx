@@ -1,8 +1,0 @@
-#Mapping values
-#Tue Jul 17 18:55:06 CEST 2018
-SEVERITY__C=Severity__c
-INCIDENT_TYPE__C=Incident_Type__c
-INFRACTION__C=Infraction__c
-INCIDENT_DATE__C=Incident_Date__c
-REPORT__C=Report__c
-MINE__C=Mine__r\:externalid__c

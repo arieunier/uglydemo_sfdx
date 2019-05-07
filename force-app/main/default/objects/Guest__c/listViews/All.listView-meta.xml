@@ -7,6 +7,7 @@
     <columns>NAME</columns>
     <columns>Host__c</columns>
     <columns>AcceptedByHost__c</columns>
+    <columns>Company__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

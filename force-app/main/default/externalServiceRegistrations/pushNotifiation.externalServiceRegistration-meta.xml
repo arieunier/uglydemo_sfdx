@@ -20,7 +20,7 @@
             &quot;url&quot;: &quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;
         }
     },
-    &quot;host&quot;: &quot;basecampmadrid.herokuapp.com&quot;,
+    &quot;host&quot;: &quot;yourdemo.herokuapp.com&quot;,
     &quot;schemes&quot;: [
         &quot;https&quot;,
         &quot;http&quot;

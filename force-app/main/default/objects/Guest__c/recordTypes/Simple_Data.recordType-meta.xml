@@ -2,5 +2,29 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Simple_Data</fullName>
     <active>true</active>
+    <compactLayoutAssignment>TopFields</compactLayoutAssignment>
     <label>Simple Data</label>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>AT RECEPTION</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>BADGE ISSUED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BADGE RETURNED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RETRIEVED BY HOST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECURITY RISK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>

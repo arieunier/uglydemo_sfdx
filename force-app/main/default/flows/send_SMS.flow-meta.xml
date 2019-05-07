@@ -2,11 +2,17 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <interviewLabel>send SMS {!$Flow.CurrentDateTime}</interviewLabel>
     <label>send SMS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
         <name>generate_PE</name>
         <label>generate PE</label>
-        <locationX>69</locationX>
+        <locationX>165</locationX>
         <locationY>238</locationY>
         <connector>
             <targetReference>SMS_has_been_sent</targetReference>
@@ -28,7 +34,7 @@
     <recordLookups>
         <name>getCurrentObject</name>
         <label>getCurrentObject</label>
-        <locationX>228</locationX>
+        <locationX>324</locationX>
         <locationY>63</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -50,11 +56,11 @@
     <screens>
         <name>Send_an_SMS</name>
         <label>Send an SMS</label>
-        <locationX>84</locationX>
+        <locationX>180</locationX>
         <locationY>121</locationY>
-        <allowBack>true</allowBack>
+        <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
+        <allowPause>false</allowPause>
         <connector>
             <targetReference>generate_PE</targetReference>
         </connector>
@@ -81,13 +87,14 @@
     <screens>
         <name>SMS_has_been_sent</name>
         <label>SMS has been sent</label>
-        <locationX>69</locationX>
+        <locationX>165</locationX>
         <locationY>374</locationY>
-        <allowBack>true</allowBack>
+        <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
-        <allowPause>true</allowPause>
+        <allowPause>false</allowPause>
         <fields>
             <name>Messagesent</name>
+            <fieldText>&quot;{!Message}&quot; sent to {!Phone_Number}</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>

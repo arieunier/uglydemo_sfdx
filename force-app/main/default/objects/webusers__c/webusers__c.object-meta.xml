@@ -55,7 +55,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <gender>Feminine</gender>
     <label>webuser</label>
     <nameField>
         <label>webusers Name</label>

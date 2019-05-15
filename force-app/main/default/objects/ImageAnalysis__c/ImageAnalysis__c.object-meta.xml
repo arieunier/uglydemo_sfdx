@@ -55,7 +55,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <gender>Feminine</gender>
     <label>ImageAnalysis</label>
     <nameField>
         <displayFormat>A-{0000}</displayFormat>

@@ -56,7 +56,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <gender>Masculine</gender>
     <label>Guest</label>
     <nameField>
         <displayFormat>G-{0000}</displayFormat>

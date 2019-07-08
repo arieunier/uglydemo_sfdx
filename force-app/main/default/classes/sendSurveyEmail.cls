@@ -10,7 +10,8 @@ public class sendSurveyEmail {
                                    InviteExpiryDateTime, InvitationLink, 
                                    Name, ParticipantId, ResponseStatus from SurveyInvitation
                                    where Id = :invitation.id LIMIT 1];
-        	
+        	System.debug('######### INVITATION NAME -> ' + invitationContent.Name);
+                
             // gets the contact to send the email
 			Contact emailContact = [SELECT id, Name, Email from Contact where id=:invitationContent.ParticipantId LIMIT 1 ];
             
@@ -43,15 +44,32 @@ public class sendSurveyEmail {
             mail.setSenderDisplayName('Salesforce Tower Survey');
             
             // Specify the subject line for your email address.
-            mail.setSubject('A survey is available for you');
+            String mailSubject = 'SF Tower Communication';
+			String mailPlainTextBody = 'Hello, Thanks for contacting us today. Can you please take a minute of your time and answer a survey ? Here is the address:  ' 
+                                  + invitationContent.InvitationLink +' . ';
+            String mailHTMLBody = mailPlainTextBody +
+                 'Or <a href='+invitationContent.InvitationLink +'>click here.</a>';
             
-            // Specify the text content of the email.
-            mail.setPlainTextBody('Thanks for visiting us today. Can you please take two minutes of your time and answer a survey ? Here is the address:  ' 
-                                  + invitationContent.InvitationLink +' . ');
-            
-            mail.setHtmlBody('Thanks for visiting us today. Can you please take two minutes of your time and answer a survey ? Here is the address:  '
-                             + invitationContent.InvitationLink  +' .'+
-                 'Or <a href='+invitationContent.InvitationLink +'>click here.</a>');
+            if (invitationContent.Name == 'SF Tower Guest Feedback')
+            {
+                mailSubject = 'SF Tower Welcome Guest Survey';
+				mailPlainTextBody = 'Thanks for visiting us today. Can you please take two minutes of your time and answer a survey ? Here is the address:  ' 
+                                  + invitationContent.InvitationLink +' . ' ;     
+                mailHTMLBody = mailPlainTextBody +
+                 'Or <a href='+invitationContent.InvitationLink +'>click here.</a>';
+            }
+            else if (invitationContent.Name == 'SF Close Case Feedback')
+            {
+                mailSubject = 'SF Tower Customer Support Survey';
+				mailPlainTextBody = 'Thanks for contacting our support today. Can you please take two minutes of your time and answer a survey to help us improving our processes ? Here is the address:  ' 
+                                  + invitationContent.InvitationLink +' . ' ;
+                mailHTMLBody = mailPlainTextBody +
+                 'Or <a href='+invitationContent.InvitationLink +'>click here.</a>';
+            }
+            mail.setSubject(mailSubject);
+            mail.setPlainTextBody(mailPlainTextBody);
+            mail.setHtmlBody(mailHTMLBody);
+
             
             // Send the email you have created.
             Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });

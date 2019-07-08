@@ -1,7 +1,11 @@
 {
     "orgName": "arieunier Company",
-    "edition": "Developer",
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"]
+    "edition": "developer",
+    "features": ["Communities"],
+    "settings": {
+        "orgPreferenceSettings": {
+            "networksEnabled": true,
+            "s1DesktopEnabled": true
+        }
     }
 }

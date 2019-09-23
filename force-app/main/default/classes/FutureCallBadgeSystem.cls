@@ -8,7 +8,10 @@ public class FutureCallBadgeSystem {
         HttpRequest request = new HttpRequest();
         String namedCredentials='callout:heroku';
         String requestURL='/badges?';
-
+		if(External_Picture_URL == Null)
+        {
+			External_Picture_URL = 'https://miro.medium.com/max/1020/1*ghsS6XcszTfl9UTYGdYsSg.jpeg';       
+        }
         String params = 'guest_id=' + EncodingUtil.urlEncode(guest_Id, 'UTF-8') 
             + '&guest_firstname=' + EncodingUtil.urlEncode(guest_firstname, 'UTF-8') 
             + '&guest_lastname=' +  EncodingUtil.urlEncode(guest_lastname, 'UTF-8')  

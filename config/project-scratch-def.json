@@ -3,9 +3,11 @@
     "edition": "developer",
     "features": ["Communities"],
     "settings": {
-        "orgPreferenceSettings": {
-            "networksEnabled": true,
-            "s1DesktopEnabled": true
+        "communitiesSettings": {
+            "enableNetworksEnabled": true
+        },
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
         }
     }
 }

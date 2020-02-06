@@ -66,7 +66,7 @@ read -p "------------- Finished, type enter to continue "
 echo "Creating Meta Data api Package"
 rm -rf mdapi_output_dir
 mkdir mdapi_output_dir
-sfdx force:source:convert -d mdapi_output_dir/ --packagename GuestAmbassadorApp
+sfdx force:source:convert -d mdapi_output_dir/ --packagename sf-alm-demo
 read -p "------------- Finished, type enter to continue " 
 
 echo "Sending Metadata Api Package to the $DEVHUBALIAS Organisation"

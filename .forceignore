@@ -5,3 +5,6 @@ package.xml
 AppSwitcher.appMenu
 force-app/main/default/profiles/
 force-app/main/default/setting/OrgPreference.settings-meta.xml
+**/jsconfig.json
+
+**/.eslintrc.json

@@ -1,4 +1,7 @@
 .sfdx
 .vscode
 force-app/main/default/profiles/
-./mdapi_output_dir
+mdapi_output_dir/
+.localdevserver/
+.DS_Store
+*.tar.gz

@@ -3,6 +3,12 @@
     <interviewLabel>Net Promoter Score</interviewLabel>
     <label>Net Promoter Score</label>
     <processMetadataValues>
+        <name>autoProgressEnabled</name>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
         <name>hasWelcomePage</name>
         <value>
             <booleanValue>false</booleanValue>
@@ -25,9 +31,15 @@
         <allowPause>true</allowPause>
         <fields>
             <processMetadataValues>
+                <name>autoProgressAction</name>
+                <value>
+                    <stringValue>NONE</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
                 <name>defaultValue</name>
                 <value>
-                    <elementReference>var_S_0daa128d_9121_47ea_ac24_ea4ada80b2fa_defaultValue</elementReference>
+                    <elementReference>var_S_1bb64474_536f_4b63_a4f9_aeffe8f51325_defaultValue</elementReference>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -48,7 +60,7 @@
                     <stringValue>NPS</stringValue>
                 </value>
             </processMetadataValues>
-            <name>S_0daa128d_9121_47ea_ac24_ea4ada80b2fa</name>
+            <name>S_1bb64474_536f_4b63_a4f9_aeffe8f51325</name>
             <dataType>Number</dataType>
             <extensionName>survey:runtimeNps</extensionName>
             <fieldText>How likely are you to recommend our service to a friend or colleague?</fieldText>
@@ -57,7 +69,13 @@
             <scale>0</scale>
         </fields>
         <fields>
-            <name>S_67a597f3_2dc8_48d4_a79f_c76825006b11</name>
+            <processMetadataValues>
+                <name>autoProgressAction</name>
+                <value>
+                    <stringValue>NONE</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>S_dc37ad49_c265_474f_8a90_e75bed76689b</name>
             <dataType>String</dataType>
             <fieldText>Any comments or feedback for us?</fieldText>
             <fieldType>InputField</fieldType>
@@ -125,7 +143,7 @@
         </value>
     </variables>
     <variables>
-        <name>var_S_0daa128d_9121_47ea_ac24_ea4ada80b2fa_defaultValue</name>
+        <name>var_S_1bb64474_536f_4b63_a4f9_aeffe8f51325_defaultValue</name>
         <dataType>Number</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>

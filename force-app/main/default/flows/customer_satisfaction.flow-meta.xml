@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <choices>
-        <name>S_331017df_1b47_4cf9_9ba3_5aa93d459dda</name>
-        <choiceText>Bad</choiceText>
-        <dataType>Number</dataType>
-        <value>
-            <numberValue>1.0</numberValue>
-        </value>
-    </choices>
-    <choices>
-        <name>S_6d29c057_96c3_47e6_bafa_adc75d28b64b</name>
-        <choiceText>3</choiceText>
-        <dataType>Number</dataType>
-        <value>
-            <numberValue>3.0</numberValue>
-        </value>
-    </choices>
-    <choices>
-        <name>S_741ca098_856e_4ead_b4da_4fd7373f9f1e</name>
-        <choiceText>2</choiceText>
-        <dataType>Number</dataType>
-        <value>
-            <numberValue>2.0</numberValue>
-        </value>
-    </choices>
-    <choices>
-        <name>S_aaa5a8d6_ba1c_4cdd_9694_15b8576bd9a8</name>
+        <name>S_0d606af3_717a_404f_a498_c7adf24d72a6</name>
         <choiceText>Good</choiceText>
         <dataType>Number</dataType>
         <value>
@@ -33,15 +9,45 @@
         </value>
     </choices>
     <choices>
-        <name>S_af2ffba7_57fa_432e_a4ab_a137eabec2f9</name>
+        <name>S_838b50d9_f0f5_4840_a334_85be4167406b</name>
+        <choiceText>3</choiceText>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>3.0</numberValue>
+        </value>
+    </choices>
+    <choices>
+        <name>S_8c6bbdf4_c06a_4612_a2ab_1865c378a5c8</name>
+        <choiceText>Bad</choiceText>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>1.0</numberValue>
+        </value>
+    </choices>
+    <choices>
+        <name>S_bef28640_b1bd_49ec_aea7_f1d58684f1f9</name>
         <choiceText>4</choiceText>
         <dataType>Number</dataType>
         <value>
             <numberValue>4.0</numberValue>
         </value>
     </choices>
+    <choices>
+        <name>S_c2e5b135_95a2_47c2_979b_f49904121fee</name>
+        <choiceText>2</choiceText>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>2.0</numberValue>
+        </value>
+    </choices>
     <interviewLabel>Customer Satisfaction</interviewLabel>
     <label>Customer Satisfaction</label>
+    <processMetadataValues>
+        <name>autoProgressEnabled</name>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </processMetadataValues>
     <processMetadataValues>
         <name>hasWelcomePage</name>
         <value>
@@ -65,17 +71,23 @@
         <allowPause>true</allowPause>
         <fields>
             <processMetadataValues>
-                <name>defaultValue</name>
+                <name>autoProgressAction</name>
                 <value>
-                    <elementReference>var_S_5f174af0_be97_4534_ade8_266975753af2_defaultValue</elementReference>
+                    <stringValue>NONE</stringValue>
                 </value>
             </processMetadataValues>
-            <name>S_5f174af0_be97_4534_ade8_266975753af2</name>
-            <choiceReferences>S_331017df_1b47_4cf9_9ba3_5aa93d459dda</choiceReferences>
-            <choiceReferences>S_741ca098_856e_4ead_b4da_4fd7373f9f1e</choiceReferences>
-            <choiceReferences>S_6d29c057_96c3_47e6_bafa_adc75d28b64b</choiceReferences>
-            <choiceReferences>S_af2ffba7_57fa_432e_a4ab_a137eabec2f9</choiceReferences>
-            <choiceReferences>S_aaa5a8d6_ba1c_4cdd_9694_15b8576bd9a8</choiceReferences>
+            <processMetadataValues>
+                <name>defaultValue</name>
+                <value>
+                    <elementReference>var_S_76791ce2_cb16_4fde_b3ed_2b9fff9ade9d_defaultValue</elementReference>
+                </value>
+            </processMetadataValues>
+            <name>S_76791ce2_cb16_4fde_b3ed_2b9fff9ade9d</name>
+            <choiceReferences>S_8c6bbdf4_c06a_4612_a2ab_1865c378a5c8</choiceReferences>
+            <choiceReferences>S_c2e5b135_95a2_47c2_979b_f49904121fee</choiceReferences>
+            <choiceReferences>S_838b50d9_f0f5_4840_a334_85be4167406b</choiceReferences>
+            <choiceReferences>S_bef28640_b1bd_49ec_aea7_f1d58684f1f9</choiceReferences>
+            <choiceReferences>S_0d606af3_717a_404f_a498_c7adf24d72a6</choiceReferences>
             <dataType>Number</dataType>
             <extensionName>survey:runtimeRating</extensionName>
             <fieldText>How would you rate our service?</fieldText>
@@ -84,7 +96,13 @@
             <scale>0</scale>
         </fields>
         <fields>
-            <name>S_0343e3f5_c7bc_4a85_a07e_dc82d720b45c</name>
+            <processMetadataValues>
+                <name>autoProgressAction</name>
+                <value>
+                    <stringValue>NONE</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>S_a65e841d_01b5_4e76_9b5a_2dab08bebdc9</name>
             <dataType>String</dataType>
             <fieldText>Any comments or feedback for us?</fieldText>
             <fieldType>InputField</fieldType>
@@ -152,7 +170,7 @@
         </value>
     </variables>
     <variables>
-        <name>var_S_5f174af0_be97_4534_ade8_266975753af2_defaultValue</name>
+        <name>var_S_76791ce2_cb16_4fde_b3ed_2b9fff9ade9d_defaultValue</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>

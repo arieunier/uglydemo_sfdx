@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotifyVisitor__c</fullName>
+    <externalId>false</externalId>
+    <label>NotifyVisitor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>My secretary is coming to let you in.</fullName>
+                <default>false</default>
+                <label>My secretary is coming to let you in.</label>
+            </value>
+            <value>
+                <fullName>I&#39;m five minutes late but will soon be there to pick you up. My apologies.</fullName>
+                <default>false</default>
+                <label>I&#39;m five minutes late but will soon be there to pick you up. My apologies.</label>
+            </value>
+            <value>
+                <fullName>I&#39;m on my way to let you in.</fullName>
+                <default>false</default>
+                <label>I&#39;m on my way to let you in.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
